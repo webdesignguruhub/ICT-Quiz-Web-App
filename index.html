@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ICT Quiz</title>
-  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="assets/logo.png" />
 </head>
-<body>
-  <div class="quiz-container">
-    <h1>ICT Quiz</h1>
-    <div id="questionBox">Loading...</div>
-    <ul id="options"></ul>
-    <button id="nextBtn">Next</button>
-    <p id="scoreBox"></p>
+<body class="bg-gradient-to-br from-blue-100 to-white min-h-screen flex items-center justify-center px-4">
+
+  <div class="bg-white max-w-md w-full shadow-xl rounded-2xl p-6 sm:p-10 text-center">
+    
+    <!-- Logo -->
+    <img src="assets/logo.png" alt="Logo" class="mx-auto w-20 h-20 mb-4 rounded-full shadow-md">
+
+    <h1 class="text-3xl font-bold text-blue-700 mb-2">ICT Quiz App</h1>
+    <p class="text-gray-600 mb-6">Test your ICT knowledge with quick, fun questions!</p>
+
+    <!-- Start Button -->
+    <a href="quiz.html">
+      <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-xl transition duration-300">
+        Start Quiz
+      </button>
+    </a>
+
+    <!-- Footer -->
+    <p class="mt-6 text-sm text-gray-400">Created by YourName • Hosted on GitHub</p>
   </div>
-  <script src="script.js"></script>
+
 </body>
 </html>
